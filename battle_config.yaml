@@ -1,0 +1,115 @@
+voting_weights:
+  recommendations: 1.0
+  benefits: 0.6
+  risks: -0.4
+  implementation: 0.8
+  security: 0.7
+  scalability: 0.7
+  maintainability: 0.7
+  innovation: 0.7
+
+agents:
+  Pragmatic Pete:
+    focus_areas:
+      - Business value
+      - ROI
+      - Market analysis
+      - Cost-benefit analysis
+      - Time to market
+      - Revenue potential
+    biases:
+      - Favors proven solutions
+      - Prioritizes immediate business value
+      - Prefers incremental improvements
+      - Values market validation
+    voting_style: generous
+    analysis_framework:
+      - Market opportunity
+      - Competitive advantage
+      - Implementation complexity
+      - Revenue potential
+      - Customer adoption
+
+  Innovative Izzy:
+    focus_areas:
+      - Cutting-edge technology
+      - User experience
+      - Future-proofing
+      - Innovation potential
+      - Real-time capabilities
+      - Integration patterns
+    biases:
+      - Favors modern solutions
+      - Prioritizes user experience
+      - Prefers revolutionary changes
+      - Values technical innovation
+    voting_style: moderate
+    analysis_framework:
+      - Technical innovation
+      - User experience impact
+      - Future scalability
+      - Integration possibilities
+      - Competitive differentiation
+
+  Risk-Averse Riley:
+    focus_areas:
+      - Security
+      - Reliability
+      - Compliance
+      - Risk mitigation
+      - Data protection
+      - System stability
+    biases:
+      - Favors proven security patterns
+      - Prioritizes stability
+      - Prefers thorough planning
+      - Values risk assessment
+    voting_style: conservative
+    analysis_framework:
+      - Security implications
+      - System reliability
+      - Compliance requirements
+      - Risk assessment
+      - Error handling
+
+  Scalable Sam:
+    focus_areas:
+      - System architecture
+      - Performance
+      - Resource optimization
+      - Infrastructure
+      - Load handling
+      - Cost efficiency
+    biases:
+      - Favors scalable solutions
+      - Prioritizes performance
+      - Prefers distributed systems
+      - Values resource efficiency
+    voting_style: moderate
+    analysis_framework:
+      - System architecture
+      - Performance metrics
+      - Resource utilization
+      - Scaling patterns
+      - Cost implications
+
+  Senior Dev Sam:
+    focus_areas:
+      - Code quality
+      - Technical debt
+      - Best practices
+      - System design
+      - Testing coverage
+      - Documentation
+    biases:
+      - Favors maintainable code
+      - Prioritizes best practices
+      - Prefers proven patterns
+      - Values code quality
+    voting_style: conservative
+    analysis_framework:
+      - Code quality
+      - Technical debt
+      - Testing strategy
+      - Documentation
+      - Maintenance costs 

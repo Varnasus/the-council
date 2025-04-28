@@ -1,0 +1,48 @@
+{
+    "$schema": "https://raw.githubusercontent.com/cursorinsights/cursor-rules/main/schema.json",
+    "python": {
+        "formatter": "black",
+        "linter": "flake8",
+        "type_checker": "mypy"
+    },
+    "typescript": {
+        "formatter": "prettier",
+        "linter": "eslint",
+        "type_checker": "typescript"
+    },
+    "rules": {
+        "max_line_length": 88,
+        "indent_size": 4,
+        "trailing_comma": "es5",
+        "single_quote": true
+    },
+    "ignore": [
+        "node_modules",
+        "__pycache__",
+        ".pytest_cache",
+        ".mypy_cache",
+        "dist",
+        "build"
+    ],
+    "rules": [
+        {
+            "if": { "path_matches": ["**/agents/*.py"] },
+            "then": {
+                "preferred_interpreter": "./.venv/Scripts/python.exe",
+                "description": "All agents must use the virtual environment interpreter."
+            }
+        },
+        {
+            "if": { "path_matches": ["**/battle/*.py", "**/ui/*.py"] },
+            "then": {
+                "description": "Battle and UI files must stay lightweight and modular."
+            }
+        },
+        {
+            "if": { "path_matches": ["**/llm/*.py"] },
+            "then": {
+                "description": "All LLM calls must be routed through llm_client.py for easy model swapping."
+            }
+        }
+    ]
+} 
